@@ -5,7 +5,6 @@ all:
         ubuntu_instance:
           ansible_host: 10.0.10.161
           ansible_user: ubuntu
-          ansible_private_key_file: /home/ubuntu/.ssh/aws.pem
           ansible_become: yes
           ansible_become_method: sudo
     redhat_hosts:
@@ -13,7 +12,6 @@ all:
         redhat_instance:
           ansible_host: 10.0.10.143
           ansible_user: ec2-user
-          ansible_private_key_file: /home/ubuntu/.ssh/aws.pem
           ansible_become: yes
           ansible_become_method: sudo
 
